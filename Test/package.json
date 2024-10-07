@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
+    "@sentry/node": "^8.33.1",
+    "@sentry/profiling-node": "^8.33.1",
     "express": "^4.19.2",
     "serverless-http": "^3.2.0"
-  }
+  },
+  "devDependencies": {
+    "serverless-offline": "^14.3.2"
+  },
+  "type": "module"
 }

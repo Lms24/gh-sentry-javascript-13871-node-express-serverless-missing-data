@@ -1,15 +1,6 @@
-import { init, setupExpressErrorHandler } from "@sentry/node";
-import { nodeProfilingIntegration } from "@sentry/profiling-node";
+import { setupExpressErrorHandler } from "@sentry/node";
 
-init({
-  dsn: process.env.SENTRY_DSN,
-  environment: "development",
-
-  integrations: [nodeProfilingIntegration()],
-
-  tracesSampleRate: 1.0,
-  profilesSampleRate: 1.0,
-});
+console.log("handler Sentry DSN: ", process.env.SENTRY_DSN);
 
 import express from "express";
 import serverless from "serverless-http";
