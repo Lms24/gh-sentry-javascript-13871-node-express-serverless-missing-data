@@ -11,5 +11,7 @@
   "devDependencies": {
     "serverless-offline": "^14.3.2"
   },
-  "type": "module"
+  "scripts": {
+    "dev": "serverless offline"
+  }
 }

@@ -7,8 +7,8 @@ provider:
   name: aws
   runtime: nodejs20.x
   environment:
-    SENTRY_DSN: ${env:SENTRY_DSN}
-    NODE_OPTIONS: --import ./instrumentation.mjs
+    SENTRY_DSN: https://24a7e8a3fe4242278a8e8ba2e8480236@o447951.ingest.us.sentry.io/4505527418552320
+    NODE_OPTIONS: -r ./instrumentation.js
 
 functions:
   api:
